@@ -5,7 +5,7 @@
 //////////////////////////////////////////////////////////////////////
 /*	controleur clavier à pied										*/
 /* **************************************************************** */
-/*  Version: 0.1					---       		Date: 03/05/2020*/  
+/*  Version: 1.0					---       		Date: 03/05/2020*/  
 /*  OctoGeeK						---           			OctoJulo*/
 /* **************************************************************** */
 /*  REQUIS:		- teensy LC                     					*/
@@ -27,7 +27,7 @@ const byte ROWS = 2; 												// nombre de ligne
 const byte COLS = 4; 												// nombre de colonne
 
 char keys[ROWS][COLS] = {											// c'est ici que l'on place les commandes que l'on veut lier au bp.
-	{KEY_ESC,KEY_A,KEY_E,KEY_R},							// les valeurs sont trouvable sur le site: https://www.pjrc.com/teensy/td_keyboard.html
+	{KEY_ESC,KEY_A,KEY_E,KEY_R},									// les valeurs sont trouvable sur le site: https://www.pjrc.com/teensy/td_keyboard.html
 	{KEY_LEFT_SHIFT,KEY_TAB,KEY_SPACE,KEY_ENTER}  
 };
 byte rowPins[ROWS] = {7,8};											// pins utilisées pour les lignes
